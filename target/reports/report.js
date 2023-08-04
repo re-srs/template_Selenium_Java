@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("desconto.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cadastro_usuario.feature");
 formatter.feature({
   "comments": [
     {
@@ -6,66 +6,90 @@ formatter.feature({
       "value": "# language: pt"
     }
   ],
-  "line": 3,
-  "name": "Receber desconto da qazando",
-  "description": "Eu como usuário da qazando\r\nquero receber um cupom de deconto\r\npara comprar um curso com valor reduzido",
-  "id": "receber-desconto-da-qazando",
-  "keyword": "Funcionalidade"
+  "line": 4,
+  "name": "Cadastro de usuário",
+  "description": "",
+  "id": "cadastro-de-usuário",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@cadastro"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 8,
-  "name": "Visuzalizar código de deconto",
+  "line": 7,
+  "name": "Registrar novo usuário com sucesso",
   "description": "",
-  "id": "receber-desconto-da-qazando;visuzalizar-código-de-deconto",
+  "id": "cadastro-de-usuário;registrar-novo-usuário-com-sucesso",
   "type": "scenario",
-  "keyword": "Cenário"
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@cadastro_sucesso"
+    }
+  ]
 });
 formatter.step({
-  "line": 9,
-  "name": "que estou no site da qazando",
+  "line": 8,
+  "name": "que estou na tela de login",
   "keyword": "Dado "
 });
 formatter.step({
+  "line": 9,
+  "name": "acesso o cadastro de usuário",
+  "keyword": "E "
+});
+formatter.step({
   "line": 10,
-  "name": "eu preencho meu email",
+  "name": "eu preencho o formulário de cadastro",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 11,
-  "name": "clico em ganhar cupom",
+  "name": "clico em registrar",
   "keyword": "E "
 });
 formatter.step({
   "line": 12,
-  "name": "eu vejo o código de desconto",
+  "name": "vejo a mensagem de cadastro realizado com sucesso",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "DescontosStep.que_estou_no_site_da_qazando()"
+  "location": "LoginSteps.que_estou_na_tela_de_login()"
 });
 formatter.result({
-  "duration": 3726113500,
+  "duration": 4060403101,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.eu_preencho_meu_email()"
+  "location": "LoginSteps.acesso_o_cadastro_de_usuário()"
 });
 formatter.result({
-  "duration": 2188580900,
+  "duration": 2336001101,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.clico_em_ganhar_cupom()"
+  "location": "CadastroSteps.eu_preencho_o_formulário_de_cadastro()"
 });
 formatter.result({
-  "duration": 281777700,
+  "duration": 90200,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.eu_vejo_o_código_de_desconto()"
+  "location": "CadastroSteps.clico_em_registrar()"
 });
 formatter.result({
-  "duration": 36616600,
+  "duration": 35600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CadastroSteps.vejo_a_mensagem_de_cadastro_realizado_com_sucesso()"
+});
+formatter.result({
+  "duration": 37201,
   "status": "passed"
 });
 });

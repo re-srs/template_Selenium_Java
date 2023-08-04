@@ -9,10 +9,7 @@ public class CadastroSteps extends RunCucumberTeste {
 
 
 
-    @Dado("^acesso o cadastro de usuário$")
-    public void acesso_o_cadastro_de_usuário() throws Throwable {
 
-    }
 
     @Quando("^eu preencho o formulário de cadastro$")
     public void eu_preencho_o_formulário_de_cadastro() throws Throwable {
