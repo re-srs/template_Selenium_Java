@@ -12,17 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @CucumberOptions(
         plugin = {"json:target/reports/cucumberReport.json", "html:target/reports/"},
         features = "src/test/resources/features",
-        tags = {"@cadastro_sucesso"},
+        tags = {"@enviar_mensagem_sucesso"},
         glue = {"steps"}
 )
-public class RunCucumberTeste {
-
-   public static WebDriver driver;
-
-    @BeforeClass
-    public static  void start() {
-        driver =  new ChromeDriver();
-    }
+public class RunCucumberTeste extends RunBase{
 
     @AfterClass
     public static void stop() {

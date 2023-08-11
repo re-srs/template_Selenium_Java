@@ -9,4 +9,5 @@
       E acesso o cadastro de usuário
       Quando eu preencho o formulário de cadastro
       E clico em registrar
-      Então vejo a mensagem de cadastro realizado com sucesso
+      Então vejo usuario logado na tela
+
