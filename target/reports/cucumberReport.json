@@ -1,0 +1,152 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Buscar CEP \"69005-040\"",
+        "description": "",
+        "id": "busca-cep;buscar-cep-\"69005-040\"",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3737834600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que estou na tela do site dos correios de buscar cep",
+            "match": {
+              "location": "BuscaCEPSteps.que_estou_na_tela_do_site_dos_correios_de_buscar_cep()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 86627600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "eu preencho o campo de cep",
+            "match": {
+              "location": "BuscaCEPSteps.eu_preencho_o_campo_de_cep()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 63861700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clico em Buscar",
+            "match": {
+              "location": "BuscaCEPSteps.clico_em_Buscar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 718345400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "vejo as informações do cep inserido",
+            "match": {
+              "location": "BuscaCEPSteps.vejo_as_informações_do_cep_inserido()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@busca_cep"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Buscar NOME \"Lojas Bemol\"",
+        "description": "",
+        "id": "busca-cep;buscar-nome-\"lojas-bemol\"",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128346300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que estou na tela do site dos correios de buscar cep",
+            "match": {
+              "location": "BuscaCEPSteps.que_estou_na_tela_do_site_dos_correios_de_buscar_cep()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 61395900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "eu preencho o campo de cep com nome",
+            "match": {
+              "location": "BuscaCEPSteps.eu_preencho_o_campo_de_cep_com_nome()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 55729200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clico em Buscar",
+            "match": {
+              "location": "BuscaCEPSteps.clico_em_Buscar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 650595900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "vejo as informações do cep inserido",
+            "match": {
+              "location": "BuscaCEPSteps.vejo_as_informações_do_cep_inserido()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@busca_nome"
+          }
+        ]
+      }
+    ],
+    "name": "Busca CEP",
+    "description": "",
+    "id": "busca-cep",
+    "keyword": "Funcionalidade",
+    "uri": "busca_cep.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@busca_dados"
+      }
+    ]
+  }
+]

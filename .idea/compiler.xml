@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="QazandoSeleniumTest" />
-        <module name="template_Selenium_Java" />
+        <module name="buscaCEP_Selenium_Java" />
       </profile>
     </annotationProcessing>
   </component>
